@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "FPHider",
+    "version": "1.0",
+
+    "description": "Enables you to minimize browser fingerprinting by modifying request headers, blocking js, etc",
+    
+    "icons": {
+        "1": "icons/fp-1.jpg"
+    },
+
+    "permissions": [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking"
+    ],
+    
+    "browser_action": {
+        "default_icon": "icons/fp-1.jpg",
+        "default_title": "FPHider",
+        "default_popup": "popup/choose_action.html"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    }
+
+
+}
